@@ -8,10 +8,23 @@ def home(request):
     context = {}
 
     if 'submit' in request.POST:
-        msg = Message(name=request.POST['name'], email=request.POST['email'],
+        msg = Msg(name=request.POST['name'], email=request.POST['email'],
                       message=request.POST['message'], subject=request.POST['subject'])
         msg.save()
         context.update({'message': 'Message Received!', 'messagetype': 'success'})
 
     context.update(csrf(request))
     return render(request, 'myweb/index.html', context)
+    
+def readmore(request):
+        return render(request, 'myweb/readmore.html', {})
+      
+def error(request):
+    context = {'message': "You've wandered too far!",
+               "followup": "Let's take you ",
+               'linkword': "home",
+               "link": "/"
+               }
+
+    return render(request, 'myweb/error.html', context)
+
