@@ -42,9 +42,35 @@ a {
 	width: 100%;
 	float: left;
 }
+.err
+{
+	background-image: url(images/error.jpg);
+}
+.banner-e {
+	background-attachment: fixed;
+	background-color: #645862;
+	background-image: url(images/error.jpg);
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	cursor: default;
+	text-align: center;
+	width: 100%;
+	float: left;
+}
+
 .bg-overlay {
 	padding: 280px 0 220px;
 	background-color: RGBA(15, 5, 20, 0.84);
+}
+.bg-err {
+	background-attachment: fixed;
+	padding: 313px 0 250px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	
 }
 .banner-text h2 {
 	font-size: 50px;

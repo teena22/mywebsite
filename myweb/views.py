@@ -20,11 +20,12 @@ def readmore(request):
         return render(request, 'myweb/readmore.html', {})
       
 def error(request):
-    context = {'message': "You've wandered too far!",
+    context = {'message': "Oops! something went wrong",
                "followup": "Let's take you ",
-               'linkword': "home",
+               'linkword': "Home",
                "link": "/"
                }
 
     return render(request, 'myweb/error.html', context)
+    
 
