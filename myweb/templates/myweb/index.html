@@ -18,12 +18,7 @@
 <link rel="icon" type="image/jpg" href="{% static 'myweb/images/teenag.jpg' %}">
 <link rel="stylesheet" type="text/css" href="static/myweb/css/bootstrap.min.css"/>
 <link rel="stylesheet" type="text/css" href="static/myweb/css/font-awesome.min.css"/>
-<link rel="stylesheet" type="text/css" href="static/myweb/css/simple-line-icons.css"/>
-<link rel="stylesheet" type="text/css" href="static/myweb/css/animate.css"/>
 <link rel="stylesheet" type="text/css" href="static/myweb/style.css"/>
-<link rel="stylesheet" type="text/css" href="static/myweb/css/owl.carousel.css"/>
-<link rel="stylesheet" type="text/css" href="static/myweb/css/owl.theme.css"/>
-<link rel="stylesheet" type="text/css" href="static/myweb/css/owl.transitions.css"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,100,200,300,500,600,800,900' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:400,700' rel='stylesheet' type='text/css'>
@@ -42,18 +37,18 @@
         <a class="navbar-brand" href="#">Teena garg</a> </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active" ><a href="/#banner">Home</a></li>
-          <li><a href="/#work">Interests</a></li>
+          <li class="active" ><a href="/#home">Home</a></li>
           <!--<li><a href="#">Resume</a></li>-->
-          <li><a href="/#project">Projects</a></li>
           <li><a href="/#about">About Me</a></li>
+          <li><a href="/#projects">Projects</a></li>
+          <li><a href="/#interests">Interests</a></li>
           <li><a href="/#contact">Contact Me</a></li>      
         </ul>
       </div>
     </div>
   </nav>
 </div>
-<div class="banner" id="banner">
+<div class="banner" id="home">
   <div class="bg-overlay">
     <div class="container">
       <div class="row">
@@ -69,10 +64,66 @@
 </div>
 <link href='//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' rel='stylesheet'>
 			
+<div class="about" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <h3>About Me</h3>
+      </div>
+      <div class="col-md-6">
+        <div class="about-text">
+          <p>Hello, I'm 'Teena'. I am currently pursuing my MCA at National Institute Of Technology Karnataka. One thing I love the most is sketching(look and draw). In my spare time I usually listen music. </p>
+          <p>I am currently learning competitive programming on hackerrank and geeksforgeeks.I made this website to improve my coding skills.  </p>
+        </div>
+      </div>
+      <div>
+      <img src=static/myweb/images/teenag.jpg style="max-width:300px">
+      </div>
+      
+      
+    </div>
+  </div>
+</div>
 
+<!--project-->
+<div id="projects" class="portfolio">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 text-center text">
+        <h3>My Projects</h3>
+      </div>
+    </div>
+    <div class="about-text">
+    	   <p>I made some website projects which are on django:-</p>
+    	  <h2>Imaginit</h2>
+          <p> Here  we  proposed a system  which removes  noise  from  the  image  for  better  view. User  can  save  image  with  different  effects  and can also see his/her previous edited image. System also provides editing effects like  resize ,rotate and flip the image. Now-a-days we are using so many image editors. But the problem with normal current image editors is that we can’t get noise resolved image. We are making a image editor in such a way that it will make a image noise resolved and will also provide some existing features. It will save the image with all the changes and reduce its size. </p>
+          <p>see:<a href="https://github.com/teena22/imaginit">https://github.com/teena22/imaginit</a></p><br>
+          <h2>My website</h2>
+          <p>This is the mywebsite which u r seeing currently.</p>
+          <p>see:<a href="https://github.com/teena22/mywebsite">https://github.com/teena22/mywebsite</a></p>
+    </div>
+    <!-- /.row --> 
+  </div>
+  <!-- /.container --> 
+</div>
+<div class="call-to-action">
+  <div class="call-overlay">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-10">
+          <div class="subscribe-text">
+            
+            <p>“ It's not at all important to get it right the first time. It's vitally important to get it right the last time. ” - Andrew Hunt and David Thomas</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- creativity -->
-<div id="work" class="portfolio">
+<div id="interests" class="portfolio">
   <div class="container">
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 text-center text">
@@ -109,44 +160,7 @@
         <div class="col-md-8 col-sm-10">
           <div class="subscribe-text">
             
-            <p>Drawing is the only thing I've found in which I can lose myself completely. I love it.</p>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  </div>
-</div>
-<!--project-->
-<div id="project" class="portfolio">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-10 col-lg-offset-1 text-center text">
-        <h3>My Projects</h3>
-      </div>
-    </div>
-    <div class="about-text">
-    	   <p>I made some projects which are on django:-</p>
-    	  <h2>Imaginit</h2>
-          <p> Here  we  proposed a system  which removes  noise  from  the  image  for  better  view. User  can  save  image  with  different  effects  and can also see his/her previous edited image. System also provides editing effects like  resize ,rotate and flip the image. Now-a-days we are using so many image editors. But the problem with normal current image editors is that we can’t get noise resolved image. We are making a image editor in such a way that it will make a image noise resolved and will also provide some existing features. It will save the image with all the changes and reduce its size. </p>
-          <p>see:<a href="https://github.com/teena22/imaginit">https://github.com/teena22/imaginit</a></p><br>
-          <h2>My website</h2>
-          <p>This is the mywebsite which u r seeing currently.</p>
-          <p>see:<a href="https://github.com/teena22/mywebsite">https://github.com/teena22/mywebsite</a></p>
-    </div>
-    <!-- /.row --> 
-  </div>
-  <!-- /.container --> 
-</div>
-
-<div class="call-to-action">
-  <div class="call-overlay">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-10">
-          <div class="subscribe-text">
-            
-            <p>“ It's not at all important to get it right the first time. It's vitally important to get it right the last time. ” - Andrew Hunt and David Thomas</p>
+            <p>"Drawing is not the same as form; it is a way of seeing form." -Edgar Degas</p>
           </div>
         </div>
         
@@ -155,26 +169,10 @@
   </div>
 </div>
 
-<div class="about" id="about">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 text-center">
-        <h3>About Me</h3>
-      </div>
-      <div class="col-md-6">
-        <div class="about-text">
-          <p>Hello, I'm 'Teena'. I am currently pursuing my MCA at National Institute Of Technology Karnataka. One thing I love the most is look and draw. In my spare time I usually listen music. </p>
-          <p>I am currently learning competitive programming on hackerrank and geeksforgeeks.I made this website to improve my coding skills.  </p>
-        </div>
-      </div>
-      <div>
-      <img src=static/myweb/images/teenag.jpg style="max-width:300px">
-      </div>
-      
-      
-    </div>
-  </div>
-</div>
+
+
+
+
 
 <!--contact-->
 <div class="contact" id="contact">
@@ -226,7 +224,7 @@
 <footer>
 <div id="err-copyright">
 			<div class="container">
-				<!--Framework : <a href="https://www.djangoproject.com/">Django &nbsp </a>Design: <a href="http://templated.co">TEMPLATED &nbsp</a> </a>-->
+				
 			</div>
 		</div>
   </div>
@@ -250,38 +248,7 @@
 <script type="text/javascript" src="static/myweb/js/jquery.countTo.js"></script> 
 <script type="text/javascript" src="static/myweb/js/jquery.waypoints.min.js"></script> 
 <script>
-$(document).ready(function() {
-     
-      $("#owl-demo").owlCarousel({
-     
-          navigation : false, // Show next and prev buttons
-          slideSpeed : 500,
-		  autoPlay : 3000,
-          paginationSpeed : 400,
-          singleItem:true
-     
-      });
-     
-    });
-	/*$('.timer').each(count);*/
-	jQuery(function ($) {
-      // custom formatting example
-      $('.timer').data('countToOptions', {
-        formatter: function (value, options) {
-          return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
-        }
-      });
-  // start all the timers
-      $('#testimonials').waypoint(function() {
-    $('.timer').each(count);
-	});
- 
-      function count(options) {
-        var $this = $(this);
-        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
-        $this.countTo(options);
-      }
-    });
+
 	$(document).ready(function(){
   // Add smooth scrolling to all links in navbar + footer link
   $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -327,5 +294,3 @@ function showDivs(n) {
 </script>
 </body>
 </html>
-
-
