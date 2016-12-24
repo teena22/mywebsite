@@ -37,7 +37,7 @@ a {
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: white;
-	cursor: default;
+	/*cursor: default;*/
 	text-align: center;
 	width: 100%;
 	float: left;
