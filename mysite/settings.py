@@ -36,7 +36,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY', DEFAULT_SECRET_KEY)
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', True)
+DEBUG = os.environ.get('DEBUG', False)
+# DEBUG = False
 
 ALLOWED_HOSTS = [
     '127.0.0.1', '.pythonanywhere.com', '.herokuapp.com',
@@ -138,3 +139,4 @@ USE_TZ = True
 STATIC_URL = '/static/'
 # STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'

@@ -3,6 +3,6 @@
 __pycache__
 ivenv
 db.sqlite3
-/static
+static_root
 .DS_Store
 secrets.json
