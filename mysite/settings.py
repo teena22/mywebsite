@@ -40,7 +40,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', DEFAULT_SECRET_KEY)
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', 'teena.pythonanywhere.com']
+    '127.0.0.1', 'teenagarg22.pythonanywhere.com']
 
 
 # Application definition
