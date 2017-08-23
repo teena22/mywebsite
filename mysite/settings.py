@@ -39,7 +39,7 @@ SECRET_KEY = get_secret('SECRET_KEY')
 DEBUG = get_secret('DEBUG')
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', 'teena.pythonanywhere.com']
+    '127.0.0.1', 'teenagarg22.pythonanywhere.com']
 
 
 # Application definition
