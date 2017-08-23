@@ -7,4 +7,7 @@ class Msg(models.Model):
     message = models.TextField()
     created = models.DateTimeField(auto_now_add=True)
     checked = models.BooleanField(default=False)
+    
+    def __unicode__(self):
+        return ("%s (%s)" % (self.name, self.email))
 
