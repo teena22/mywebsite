@@ -36,12 +36,11 @@ SECRET_KEY = os.environ.get('SECRET_KEY', DEFAULT_SECRET_KEY)
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = os.environ.get('DEBUG', False)
-# DEBUG = False
+#DEBUG = os.environ.get('DEBUG', False)
+DEBUG = True
 
 ALLOWED_HOSTS = [
-    '127.0.0.1', '.pythonanywhere.com', '.herokuapp.com',
-    '.teenagarg.in']
+    '127.0.0.1', 'teenag22.pythonanywhere.com']
 
 
 # Application definition
@@ -137,6 +136,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
 STATIC_URL = '/static/'
-# STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 STATIC_ROOT = os.path.join(BASE_DIR, 'static_root')
-STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+#STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
